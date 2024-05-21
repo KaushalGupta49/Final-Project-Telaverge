@@ -18,4 +18,4 @@
     node app.js
 ```
 
-### Install MongoDBCompass for DatabaseSupport or Terminal 2 will give errors.
+### Install MongoDBCompass for DatabaseSupport or Terminal 2 will give errors. and load Telaverge.products.json in Telaverge database and collection name = products
