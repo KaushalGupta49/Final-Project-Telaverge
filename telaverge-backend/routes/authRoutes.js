@@ -46,6 +46,9 @@ router.post('/login', async (req, res) => {
     }
     if (theUser) {
       let result = comparePassword(req.body.password, theUser.password);
+      if (!result) {
+        return res.json({error: 'Wrong pasword'});
+      }
       const userName = theUser.firstName;
       const userEmail = theUser.email;
       return res.json({userName, userEmail});

@@ -31,7 +31,7 @@ function RegisterPage() {
     console.log('json data', json);
     console.log('er', json.error);
 
-    if (json) {
+    if (json.email) {
       sessionStorage.setItem('name', firstName);
       sessionStorage.setItem('email', json.email);
       navigate('/app/login');
