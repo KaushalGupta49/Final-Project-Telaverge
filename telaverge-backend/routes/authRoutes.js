@@ -32,7 +32,7 @@ router.post('/register', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-  console.log(' Inside login');
+  console.log('Login successful');
   try {
     const db = await connectToDatabase();
     const collection = db.collection(collectionName);

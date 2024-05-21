@@ -4,7 +4,6 @@ import {urlConfig} from '../../config';
 function SearchPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  // const [searchHistory, SetSearchHistory] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -43,6 +42,25 @@ function SearchPage() {
     }
   };
 
+  const hideSearchOption = () => {
+    let list = document.getElementById('list');
+    list.style.display = 'none';
+  };
+
+  function searchProduct() {
+    let input = document.getElementById('searchbar').value;
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('product');
+
+    for (let i = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display = 'none';
+      } else {
+        x[i].style.display = 'block';
+      }
+    }
+  }
+
   return (
     <div className='flex flex-col justify-center items-center my-5'>
       <div className='w-1/2 grid grid-cols-4 gap-1'>
@@ -50,17 +68,44 @@ function SearchPage() {
           type='text'
           className='border rounded-lg p-1 px-2 col-span-3'
           placeholder='Search for items...'
+          id='searchbar'
           value={searchQuery}
+          onKeyUp={searchProduct}
           onChange={(e) => setSearchQuery(e.target.value)}
+          onClickCapture={() => {
+            let list = document.getElementById('list');
+            list.style.display = 'block';
+          }}
         />
         <button
           className='bg-blue-500 text-white p-2 rounded hover:bg-blue-600'
           onClick={handleSearch}>
           Search
         </button>
+        <ul
+          id='list'
+          className='col-span-4 text-center bg-gray-400/50 rounded hidden'>
+          <li className='product my-1'>Lamp</li>
+          <li className='product my-1'>Curtain</li>
+          <li className='product my-1'>Bookshelf</li>
+          <li className='product my-1'>Bookshelf</li>
+          <li className='product my-1'>Desk</li>
+          <li className='product my-1'>Chair</li>
+          <li className='product my-1'>Desk Chair</li>
+          <li className='product my-1'>Coffee Table</li>
+          <li className='product my-1'>Coffee</li>
+          <li className='product my-1'>Table</li>
+          <li className='product my-1'>Laptop</li>
+          <li className='product my-1'>Couch</li>
+          <li className='product my-1'>TV Stand</li>
+          <li className='product my-1'>Bed Frame</li>
+          <li className='product my-1'>Cabinet</li>
+        </ul>
       </div>
 
-      <div className='flex flex-row gap-3 justify-center flex-wrap my-8'>
+      <div
+        className='w-full flex flex-row gap-3 justify-center flex-wrap my-8'
+        onClick={hideSearchOption}>
         {searchResults.length > 0 ? (
           searchResults.map((product) => (
             <div key={product.id} className='w-1/3 border rounded-lg'>
