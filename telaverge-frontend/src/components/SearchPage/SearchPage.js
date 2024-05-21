@@ -4,15 +4,16 @@ import {urlConfig} from '../../config';
 function SearchPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  // const [searchHistory, SetSearchHistory] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
+      let baseUrl = `${urlConfig.backendUrl}/api/search/`;
+      const queryParams = new URLSearchParams({}).toString();
       try {
-        let url = `${urlConfig.backendUrl}/api/secondchance/items`;
-        console.log(url);
-        const response = await fetch(url);
+        const response = await fetch(`${baseUrl}${queryParams}`);
         if (!response.ok) {
-          throw new Error(`HTTP error; ${response.status}`);
+          throw new Error('Search failed');
         }
         const data = await response.json();
         setSearchResults(data);
@@ -44,16 +45,16 @@ function SearchPage() {
 
   return (
     <div className='flex flex-col justify-center items-center my-5'>
-      <div className='w-1/2'>
+      <div className='w-1/2 grid grid-cols-4 gap-1'>
         <input
           type='text'
-          className='block border w-full rounded-lg p-1 px-2'
+          className='border rounded-lg p-1 px-2 col-span-3'
           placeholder='Search for items...'
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
         <button
-          className='bg-blue-500 text-white w-full my-3 p-2 rounded hover:bg-blue-600'
+          className='bg-blue-500 text-white p-2 rounded hover:bg-blue-600'
           onClick={handleSearch}>
           Search
         </button>

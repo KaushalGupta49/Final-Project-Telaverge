@@ -6,6 +6,7 @@
 
 ```
     cd telaverge-frontend
+    npm i
     npm start
 ```
 
@@ -13,6 +14,7 @@
 
 ```
     cd telaverge-backend
+    npm i
     node app.js
 ```
 

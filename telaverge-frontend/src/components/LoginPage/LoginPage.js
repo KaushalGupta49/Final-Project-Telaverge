@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import {urlConfig} from '../../config';
 import {useAppContext} from '../../context/AppContext';
@@ -9,13 +9,6 @@ function LoginPage() {
   const [incorrect, setIncorrect] = useState('');
   const navigate = useNavigate();
   const {setIsLoggedIn} = useAppContext();
-  // const bearerToken = sessionStorage.getItem('bearer-token');
-
-  useEffect(() => {
-    if (sessionStorage.getItem('auth-token')) {
-      navigate('/app');
-    }
-  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -31,12 +24,11 @@ function LoginPage() {
     });
 
     const json = await res.json();
-    console.log('Json', json);
+    console.log('Details', json);
     if (json.userName) {
       sessionStorage.setItem('name', json.userName);
       sessionStorage.setItem('email', json.userEmail);
-
-      navigate('/app');
+      navigate('/app/search');
       setIsLoggedIn(true);
     } else {
       document.getElementById('email').value = '';
@@ -83,14 +75,7 @@ function LoginPage() {
               setIncorrect('');
             }}
           />
-          <span
-            style={{
-              color: 'red',
-              height: '.5cm',
-              display: 'block',
-              fontStyle: 'italic',
-              fontSize: '12px',
-            }}>
+          <span className='text-red-500 h-1 block text-xs italic'>
             {incorrect}
           </span>
         </div>
