@@ -19,3 +19,5 @@
 ```
 
 ### Install MongoDBCompass for DatabaseSupport or Terminal 2 will give errors. and load Telaverge.products.json in Telaverge database and collection name = products
+
+This project contains a login page and a regitrations page and a Search page which shows result on the basis of your past searches and your queries.

@@ -13,7 +13,6 @@ function RegisterPage() {
   const {setIsLoggedIn} = useAppContext();
 
   const handleRegister = async () => {
-    //api call
     const response = await fetch(`${urlConfig.backendUrl}/api/auth/register`, {
       method: 'POST',
       headers: {

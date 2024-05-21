@@ -22,7 +22,7 @@ router.post('/register', async (req, res) => {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
       password: req.body.password,
-      searchHistory: '',
+      searchHistory: [],
     };
     await collection.insertOne(newUser);
     res.json({email});

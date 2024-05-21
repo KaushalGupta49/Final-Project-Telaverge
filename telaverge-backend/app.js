@@ -19,9 +19,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const authRoutes = require('./routes/authRoutes');
 const searchRoutes = require('./routes/searchRoutes');
+const updateRoutes = require('./routes/updateRoutes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/search', searchRoutes);
+app.use('/api/update', updateRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err);

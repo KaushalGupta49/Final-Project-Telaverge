@@ -4,11 +4,26 @@ import {urlConfig} from '../../config';
 function SearchPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [searchHistory, setSearchHistory] = useState([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
-      let baseUrl = `${urlConfig.backendUrl}/api/search/`;
-      const queryParams = new URLSearchParams({}).toString();
+      let searchhistoryUrl = `${urlConfig.backendUrl}/api/update/get`;
+      try {
+        const response = await fetch(searchhistoryUrl);
+        if (!response.ok) {
+          throw new Error('Search failed');
+        }
+        const data = await response.json();
+        setSearchHistory(data);
+      } catch (error) {
+        console.log('Fetch error: ' + error.message);
+      }
+
+      let baseUrl = `${urlConfig.backendUrl}/api/search?`;
+      const queryParams = new URLSearchParams({
+        name: 'Redmi',
+      }).toString();
       try {
         const response = await fetch(`${baseUrl}${queryParams}`);
         if (!response.ok) {
@@ -37,6 +52,20 @@ function SearchPage() {
       }
       const data = await response.json();
       setSearchResults(data);
+    } catch (error) {
+      console.error('Failed to fetch search results:', error);
+    }
+
+    const updateUrl = `${urlConfig.backendUrl}/api/update?`;
+    const queryParamsUpdate = new URLSearchParams({
+      name: searchQuery,
+    }).toString();
+
+    try {
+      const response = await fetch(`${updateUrl}${queryParamsUpdate}`);
+      if (!response.ok) {
+        throw new Error('Search failed');
+      }
     } catch (error) {
       console.error('Failed to fetch search results:', error);
     }
@@ -85,30 +114,17 @@ function SearchPage() {
         <ul
           id='list'
           className='col-span-4 text-center bg-gray-400/50 rounded hidden'>
-          <li className='product my-1'>Lamp</li>
-          <li className='product my-1'>Curtain</li>
-          <li className='product my-1'>Bookshelf</li>
-          <li className='product my-1'>Bookshelf</li>
-          <li className='product my-1'>Desk</li>
-          <li className='product my-1'>Chair</li>
-          <li className='product my-1'>Desk Chair</li>
-          <li className='product my-1'>Coffee Table</li>
-          <li className='product my-1'>Coffee</li>
-          <li className='product my-1'>Table</li>
-          <li className='product my-1'>Laptop</li>
-          <li className='product my-1'>Couch</li>
-          <li className='product my-1'>TV Stand</li>
-          <li className='product my-1'>Bed Frame</li>
-          <li className='product my-1'>Cabinet</li>
-          <li className='product my-1'>Dell</li>
-          <li className='product my-1'>Redmi</li>
-          <li className='product my-1'>Samsung</li>
-          <li className='product my-1'>Zebronics</li>
-          <li className='product my-1'>Realme</li>
-          <li className='product my-1'>Asus</li>
-          <li className='product my-1'>Vivobook</li>
-          <li className='product my-1'>MSI</li>
-          <li className='product my-1'>Bravo</li>
+          {searchHistory.map((items) => {
+            return (
+              <li
+                className='product my-1 cursor-pointer hover:text-xl'
+                onClick={() => {
+                  setSearchQuery(items.name);
+                }}>
+                {items.name}
+              </li>
+            );
+          })}
         </ul>
       </div>
 
