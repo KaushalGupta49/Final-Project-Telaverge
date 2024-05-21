@@ -13,7 +13,7 @@ router.get('/', async (req, res, next) => {
       query.name = {$regex: req.query.name, $options: 'i'};
     }
 
-    const items = await collection.find(query).toArray();
+    const items = await collection.find(query).sort({id: 1}).toArray();
     res.json(items);
   } catch (e) {
     next(e);

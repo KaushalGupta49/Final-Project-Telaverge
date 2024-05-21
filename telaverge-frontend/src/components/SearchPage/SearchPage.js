@@ -100,6 +100,15 @@ function SearchPage() {
           <li className='product my-1'>TV Stand</li>
           <li className='product my-1'>Bed Frame</li>
           <li className='product my-1'>Cabinet</li>
+          <li className='product my-1'>Dell</li>
+          <li className='product my-1'>Redmi</li>
+          <li className='product my-1'>Samsung</li>
+          <li className='product my-1'>Zebronics</li>
+          <li className='product my-1'>Realme</li>
+          <li className='product my-1'>Asus</li>
+          <li className='product my-1'>Vivobook</li>
+          <li className='product my-1'>MSI</li>
+          <li className='product my-1'>Bravo</li>
         </ul>
       </div>
 

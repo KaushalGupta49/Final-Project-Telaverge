@@ -2,6 +2,7 @@
   "name": "telaverge-frontend",
   "version": "0.1.0",
   "private": true,
+  "author": "KaushalGupta",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react": "^18.3.1",

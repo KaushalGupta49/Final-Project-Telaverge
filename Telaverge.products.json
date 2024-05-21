@@ -1,0 +1,393 @@
+[
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c10c"
+    },
+    "id": "875",
+    "name": "Lamp",
+    "category": "Kitchen",
+    "condition": "New",
+    "posted_by": "26872",
+    "zipcode": "94805",
+    "date_added": 1693267200,
+    "age_days": 400,
+    "age_years": 1.1,
+    "description": "A charming lamp that's been lighting up my reading nook...",
+    "image": "/images/lamp.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c10d"
+    },
+    "id": "396",
+    "name": "Curtain",
+    "category": "Office",
+    "condition": "Older",
+    "posted_by": "26872",
+    "zipcode": "94504",
+    "date_added": 1686960000,
+    "age_days": 1073,
+    "age_years": 2.94,
+    "description": "Elegant, flowy curtains that have graced my living room windows...",
+    "image": "/images/curtains1.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c10e"
+    },
+    "id": "812",
+    "name": "Bookshelf",
+    "category": "Office",
+    "condition": "Like New",
+    "posted_by": "26872",
+    "zipcode": "94172",
+    "date_added": 1692403200,
+    "age_days": 1053,
+    "age_years": 2.88,
+    "description": "This sturdy, well-loved bookshelf has been my literary companion...",
+    "image": "/images/bookshelf3.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c10f"
+    },
+    "id": "386",
+    "name": "Curtain",
+    "category": "Living",
+    "condition": "Older",
+    "posted_by": "26872",
+    "zipcode": "94450",
+    "date_added": 1699315200,
+    "age_days": 1719,
+    "age_years": 4.71,
+    "description": "These curtains have been the backdrop of my study...",
+    "image": "/images/curtains2.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c110"
+    },
+    "id": "419",
+    "name": "Bookshelf",
+    "category": "Bedroom",
+    "condition": "Older",
+    "posted_by": "26872",
+    "zipcode": "94500",
+    "date_added": 1690675200,
+    "age_days": 430,
+    "age_years": 1.18,
+    "description": "A compact and practical bookshelf that's been a tiny library...",
+    "image": "/images/bookshelf1.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c111"
+    },
+    "id": "420",
+    "name": "Bookshelf",
+    "category": "Bedroom",
+    "condition": "Older",
+    "posted_by": "26872",
+    "zipcode": "94500",
+    "date_added": 1689379200,
+    "age_days": 430,
+    "age_years": 1.18,
+    "description": "This bookshelf has been a fixture in my home office...",
+    "image": "/images/bookshelf2.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c112"
+    },
+    "id": "421",
+    "name": "Desk Chair",
+    "category": "Office Furniture",
+    "condition": "Like New",
+    "posted_by": "31567",
+    "zipcode": "90210",
+    "date_added": 1688083200,
+    "age_days": 400,
+    "age_years": 1.09,
+    "description": "This desk chair has been my companion during long work hours...",
+    "image": "/images/desk-chair.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c113"
+    },
+    "id": "422",
+    "name": "Coffee Table",
+    "category": "Living Room",
+    "condition": "Older",
+    "posted_by": "19876",
+    "zipcode": "10001",
+    "date_added": 1686787200,
+    "age_days": 600,
+    "age_years": 1.64,
+    "description": "This coffee table has served me well, holding countless cups of coffee...",
+    "image": "/images/coffee-table.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c114"
+    },
+    "id": "423",
+    "name": "Laptop Stand",
+    "category": "Office",
+    "condition": "Like New",
+    "posted_by": "14563",
+    "zipcode": "30303",
+    "date_added": 1685491200,
+    "age_days": 200,
+    "age_years": 0.55,
+    "description": "This laptop stand has been a lifesaver for my posture...",
+    "image": "/images/laptop-stand.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c115"
+    },
+    "id": "424",
+    "name": "Dining Table",
+    "category": "Kitchen",
+    "condition": "New",
+    "posted_by": "23789",
+    "zipcode": "94102",
+    "date_added": 1684195200,
+    "age_days": 800,
+    "age_years": 2.19,
+    "description": "This dining table has been the centerpiece of many family gatherings...",
+    "image": "/images/dining-table.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c116"
+    },
+    "id": "425",
+    "name": "Couch",
+    "category": "Living Room",
+    "condition": "Older",
+    "posted_by": "17890",
+    "zipcode": "90001",
+    "date_added": 1682899200,
+    "age_days": 1000,
+    "age_years": 2.74,
+    "description": "This couch has been a cozy spot for movie nights and lazy Sundays...",
+    "image": "/images/couch2.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c117"
+    },
+    "id": "426",
+    "name": "Office Desk",
+    "category": "Office",
+    "condition": "Older",
+    "posted_by": "27654",
+    "zipcode": "90211",
+    "date_added": 1681603200,
+    "age_days": 900,
+    "age_years": 2.47,
+    "description": "This office desk has been my workspace for years...",
+    "image": "/images/office-desk.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c118"
+    },
+    "id": "427",
+    "name": "TV Stand",
+    "category": "Living Room",
+    "condition": "Older",
+    "posted_by": "31567",
+    "zipcode": "90210",
+    "date_added": 1680307200,
+    "age_days": 700,
+    "age_years": 1.92,
+    "description": "This TV stand has held my entertainment system with ease...",
+    "image": "/images/tv-stand.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c119"
+    },
+    "id": "428",
+    "name": "Bed Frame",
+    "category": "Bedroom",
+    "condition": "Older",
+    "posted_by": "19876",
+    "zipcode": "10001",
+    "date_added": 1679011200,
+    "age_days": 1200,
+    "age_years": 3.29,
+    "description": "This bed frame has been a reliable support for many restful nights...",
+    "image": "/images/bed-frame.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c11a"
+    },
+    "id": "429",
+    "name": "Side Table",
+    "category": "Living Room",
+    "condition": "Older",
+    "posted_by": "23789",
+    "zipcode": "94102",
+    "date_added": 1677715200,
+    "age_days": 1100,
+    "age_years": 3.01,
+    "description": "This side table has been a convenient spot for lamps and books...",
+    "image": "/images/side-table.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "663dcef332f2a5e93ad4c11b"
+    },
+    "id": "430",
+    "name": "Filing Cabinet",
+    "category": "Office",
+    "condition": "Older",
+    "posted_by": "17890",
+    "zipcode": "90001",
+    "date_added": 1677715200,
+    "age_days": 1300,
+    "age_years": 3.56,
+    "description": "This filing cabinet has organized many documents over the years...",
+    "image": "/images/filing-cabinet.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d0671f"
+    },
+    "id": "1",
+    "name": "Redmi Note 13 Pro+ (Fusion Black, 8GB RAM, 256GB Storage) | World's First Mediatek 7200 Ultra 5G | 200MP Hi-Res Camera | 1.5K Curved AMOLED | 120W HyperCharge",
+    "category": "Mobile",
+    "description": "Processor:Mediatek Dimensity 7200 Octa-core Processor (Based 4nm Architecture) ; Up to 2.8 GHz;",
+    "image": "/images/redminote13pro.webp"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06720"
+    },
+    "id": "2",
+    "name": "Redmi 12 5G Jade Black 6GB RAM 128GB ROM",
+    "category": "Mobile",
+    "description": "Snapdragon 4 Gen 2 Mobile Platform : Power efficient 4nm architecture | 12GB of RAM including 6GB Virtual",
+    "image": "/images/redmi12c.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06721"
+    },
+    "id": "3",
+    "name": "Redmi 13C (Stardust Black, 4GB RAM, 128GB Storage) | Powered by 4G Mediatek Helio G85 | 90Hz Display | 50MP AI Triple Camera",
+    "category": "Mobile",
+    "description": "6.74' HD+ 90Hz display with Corning Gorilla Glass 3 Protection,600nits in High Brightness mode",
+    "image": "/images/redmi13c.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06722"
+    },
+    "id": "4",
+    "name": "realme Buds T300 Truly Wireless in-Ear Earbuds with 30dB ANC, 360° Spatial Audio Effect, 12.4mm Dynamic Bass Boost Driver with Dolby Atmos Support, Upto 40Hrs Battery and Fast Charging (Dome Green)",
+    "category": "Headphones, Earbuds & Accessories",
+    "description": "Upto 40 Hours Total Playback with Fast-charging support of 10 min charging for 7 hours playback",
+    "image": "/images/relamebudst300.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06723"
+    },
+    "id": "5",
+    "name": "Samsung Galaxy M14 5G (Berry Blue,4GB,128GB)|50MP Triple Cam|Segment's Only 6000 mAh 5G SP|5nm Processor|2 Gen. OS Upgrade & 4 Year Security Update|12GB RAM with RAM Plus|Android 13|Without Charger",
+    "category": "Mobile",
+    "description": "Superfast 5G with 13 5G Bands, Powerful Exynos 1330 Octa Core 2.4GH 5nm processor with latest Android 13 having One UI 5.0 interface",
+    "image": "/images/m145g.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06724"
+    },
+    "id": "6",
+    "name": "boAt Rockerz 550 Over Ear Bluetooth Headphones with Upto 20 Hours Playback, 50MM Drivers, Soft Padded Ear Cushions and Physical Noise Isolation, Without Mic (Black)",
+    "category": "Headphones, Earbuds & Accessories",
+    "description": "Playback- The mighty 500mAh battery capacity offers a superior playback time of up to 20 Hours",
+    "image": "/images/boatrockerz550.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06725"
+    },
+    "id": "7",
+    "name": "Noise Newly Launched Three Wireless On-Ear Headphones with 70H Playtime, 40mm Driver, Low Latency(up to 45ms),Dual Pairing, BT v5.3 (Space Blue)",
+    "category": "Headphones, Earbuds & Accessories",
+    "description": "70 Hours Playtime: Enjoy music for days without needing to recharge",
+    "image": "/images/noise.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06726"
+    },
+    "id": "8",
+    "name": "ZEBRONICS THUNDER Bluetooth 5.3 Wireless Headphones with 60H Backup, Gaming Mode, Dual Pairing, ENC, AUX, Micro SD, Voice assistant, Comfortable Earcups, Call Function(Black)",
+    "category": "Headphones, Earbuds & Accessories",
+    "description": "Comfortable Design: Beat the workday blues with music on Zeb-Thunder wireless headphone that comes in an ergonomic design a perfect fit and design for long hours use. Microphone sensitivity -40dB ±1dB. Microphone impedance 1.2k ?",
+    "image": "/images/zebronics.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06727"
+    },
+    "id": "9",
+    "name": "ZEBRONICS Duke 60hrs Playback Bluetooth Wireless Over Ear Headphone with Mic (Blue)",
+    "category": "Headphones, Earbuds & Accessories",
+    "description": "Listen to your favorite tracks all day long as the headphone comes with 60 hours of playback time",
+    "image": "/images/zebronicsduke.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "664c72cfc2a2f23f31d06728"
+    },
+    "id": "10",
+    "name": "Portronics Toad One Bluetooth Mouse with 2.4 GHz & BT 5.3 Dual Wireless, 6 Buttons, Rechargeable, RGB Lights, Connect 3 Devices, Ergonomic Design for Laptop, Smartphone, Tablet (Black)",
+    "category": "Headphones, Earbuds & Accessories",
+    "description": "[BATTERY THAT DOESN’T DIE EASILY] - This optical sensor mouse comes with a rechargeable battery through its Type-C charging port. Now work seamlessly for up to 9 days without any breaks or disruption",
+    "image": "/images/portronicsmouse.jpg"
+  },
+  {
+    "id": "11",
+    "name": "ASUS Vivobook 16X (2022), 16.0-inch (40.64 cms) FHD+ 16:10, AMD Ryzen 5 5600H, Thin and Laptop (8GB/512GB SSD/Integrated Graphics/Windows 11/Office 2021/Silver/1.80 kg), M1603QA-MB501WS",
+    "category": "Laptops",
+    "description": "Processor: AMD Ryzen 5 5600H Mobile Processor (6-core/12-thread, 19MB cache, up to 4.2 GHz max boost);Memory: 8GB DDR4 on board 3200MHz with | Storage: 512GB M.2 NVMe PCIe 3.0 SSD",
+    "image": "/images/asusvivobook.webp"
+  },
+  {
+    "id": "12",
+    "name": "Samsung Galaxy Book2 (NP750) Intel 12th Gen core i5 39.6cm (15.6') FHD Thin & Light Laptop (8 GB/512 GB/Windows 11/MS Office/Backlit Keyboard/Finger Print Reader/Silver/1.55Kg), NP750XED-KC1IN",
+    "category": "Laptops",
+    "description": "Processor: 12th Generation Intel Core i5-1235U processor (1.3 GHz up to 4.4 GHz 12 MB L3 Cache) | Memory: 8 GB LPDDR4x Memory (On BD 8 GB) | Storage: 512 GB NVMe SSD, 1 slot for SSD storage",
+    "image": "/images/galaxybook2.webp"
+  },
+  {
+    "id": "13",
+    "name": "Dell 15 Laptop, 12th Gen Intel Core i5-1235U Processor, 8GB, 512GB SSD, 15.6' (39.62cm) FHD Display, Win 11 + MSO'21,15 Month McAfee Antivirus, Black, Spill-Resistant Keyboard, Thin & Light- 1.66kg",
+    "category": "Laptops",
+    "description": "Processor: 12th Gen Intel Core i5-1235U (up to 4.40 GHz, 12MB Cache, 10 Cores)",
+    "image": "/images/dell15.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Dell G15 5530 Gaming Laptop, Intel i7-13650HX/16GB/1TB SSD/NVIDIA RTX 3050, 6 GB GDDR6/15.6' (39.62cm) FHD AG 120Hz 250 nits/Backlit KB RGB/Dark Shadow Grey/Win 11+MSO'21/15 Month McAfee/2.65kg",
+    "category": "Laptops",
+    "description": "Processor: 13th Generation Intel Core i7-13650HX (up to 4.90 GHz, 24MB , 14 Cores)",
+    "image": "/images/dellg15.jpg"
+  },
+  {
+    "id": "15",
+    "name": "MSI Bravo 15 Gaming Laptop, AMD Ryzen 7 7735HS, 40CM FHD 144Hz Laptop (16GB/1TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX 4060, GDDR6 8GB/Black/2.25Kg), C7VFK-087IN",
+    "category": "Laptops",
+    "description": "Processor: AMD Ryzen 7 7735HS Up To 4.75 GHz; Operating System: Pre-loaded Windows 11 Home with lifetime validity |Preinstalled Software: MSI Center | In the box: Laptop, Power Adapter",
+    "image": "/images/msibravo15.jpg"
+  }
+]
